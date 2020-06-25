@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("/Users/romainsagean/Downloads/cosmic-sensor-277618-64ab058bd050.json")
+  credentials = file("/path/to/credential/gcp_cred.json")
   project     = var.project_name
   region      = var.gcp_region
 }

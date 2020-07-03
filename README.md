@@ -9,10 +9,10 @@ An Ansible Playbook that installs the Cloudera stack on RHEL/CentOS
     - install python3 & git `sudo yum install -y python3 git`
     - install ansible `pip3 install --user ansible`
     - clone this repository
-    - send the `tf_host` file created by terraform on this machine
+    - send the `tf_hosts` file created by terraform on this machine
     - send your private ssh key on the machine or ensure the ssh key are trusted by all machine
     - from this host connect to each instance of the cluster using FQDN `ssh edge.c.cosmic-sensor-277618.internal`
-3. launch ansible playbook with the generated `tf_host` inventory `ansible-playbook -i tf_hosts site.yml`
+3. launch ansible playbook with the generated `tf_hosts` inventory `ansible-playbook -i tf_hosts site.yml`
 4. when the playbook finish connect to the manager on port 7180 and proceed to cluster installation (you should disable all your adblocker)
 
 ## DB info

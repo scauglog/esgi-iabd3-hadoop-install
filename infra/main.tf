@@ -61,7 +61,7 @@ resource "google_compute_instance" "master" {
 // A single Google Cloud Engine instance
 resource "google_compute_instance" "edge" {
   name         = "edge"
-  machine_type = var.machine_type
+  machine_type = "n1-standard-1"
   zone         = "${var.gcp_region}-d"
 
   boot_disk {
